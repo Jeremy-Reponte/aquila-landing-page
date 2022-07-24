@@ -1,0 +1,60 @@
+stages:
+  - publish
+  - deploy
+
+variables:
+  TAG_LATEST: ${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_NAME}:latest
+  TAG_COMMIT: ${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_NAME}:${CI_COMMIT_SHORT_SHA}
+
+publish-staging:
+  stage: publish
+  image: docker:stable
+  services:
+    - docker:dind
+  only:
+    - staging
+  before_script:
+    - echo "${CI_BUILD_TOKEN}" | docker login ${CI_REGISTRY} -u gitlab-ci-token --password-stdin
+  script:
+    - docker build -t ${TAG_COMMIT} -t ${TAG_LATEST} .
+    - docker push ${TAG_COMMIT}
+    - docker push ${TAG_LATEST}
+  after_script:
+    - docker logout ${CI_REGISTRY}
+# publish-production:
+#   stage: publish
+#   image: docker:stable
+#   services:
+#     - docker:dind
+#   only:
+#     - main
+#   before_script:
+#     - echo "${CI_BUILD_TOKEN}" | docker login ${CI_REGISTRY} -u gitlab-ci-token --password-stdin
+#   script:
+#     - docker build -t ${TAG_COMMIT} -t ${TAG_LATEST} .
+#     - docker push ${TAG_COMMIT}
+#     - docker push ${TAG_LATEST}
+#   after_script:
+#     - docker logout ${CI_REGISTRY}
+
+deploy-staging:
+  stage: deploy
+  image: docker:stable
+  services:
+    - docker:dind
+  only:
+    - staging
+  script:
+    - echo "Deploying on CapRover..."
+    - docker run caprover/cli-caprover:latest caprover deploy --caproverUrl $CAPROVER_URL --caproverPassword $CAPROVER_PASSWORD --caproverApp aquila-landing --imageName $TAG_COMMIT
+# deploy-main:
+#   stage: deploy
+#   image: docker:stable
+#   services:
+#     - docker:dind
+#   only:
+#     - main
+#   script:
+#     - echo "Deploying on CapRover..."
+#     - docker run caprover/cli-caprover:latest caprover deploy --caproverUrl $CAPROVER_URL --caproverPassword $CAPROVER_PASSWORD --caproverApp aquila-clinic --imageName $TAG_COMMIT
+#     - docker run caprover/cli-caprover:latest caprover deploy --caproverUrl $RMCOCHING_URL --caproverPassword $RMCOCHING_PASSWORD --caproverApp acs-rmcoching-app --imageName $TAG_COMMIT
