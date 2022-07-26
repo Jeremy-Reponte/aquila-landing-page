@@ -1,0 +1,10 @@
+@use "mixins";
+@use "./abstracts";
+
+.contactUsSection1 {
+  background-image: linear-gradient(180deg, #00899b, #ffffff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 742px;
+}

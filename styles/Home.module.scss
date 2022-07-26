@@ -1,0 +1,18 @@
+@use "mixins";
+@use "./abstracts";
+
+.homeSection1 {
+  background-image: url("../public/assets/aquila-bg-home-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 2741px;
+}
+
+.homeSection2 {
+  background-image: url("../public/assets/aquila-bg-home-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 946px;
+}

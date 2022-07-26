@@ -1,0 +1,9 @@
+@use "../abstracts/colors.scss" as color;
+
+.navigationContainer {
+  background: none !important;
+  border-bottom: none !important;
+  a {
+    color: color.$neutral-white-color !important;
+  }
+}
