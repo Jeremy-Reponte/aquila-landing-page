@@ -1,0 +1,21 @@
+@use "mixins";
+@use "./abstracts";
+
+.whoWeAreSection1 {
+  background-image: url("../public/assets/aquila-bg-whoweare-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 3950px;
+}
+
+.coreValuesCircleDiv{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 60px;
+}
+
+.whoWeAreFooterImg{
+    margin-left: -69px;
+}

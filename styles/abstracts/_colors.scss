@@ -1,0 +1,54 @@
+$primary-color: #00bcd4;
+$secondary-color: #d28e09;
+$aquila-color-1: #00a9bf;
+$aquila-color-2: #0098ac;
+$aquila-color-3: #00899b;
+$aquila-color-4: #007b8b;
+$neutral-gray-color-1: #e9e9e9;
+$neutral-gray-color-2: #424242;
+$neutral-gray-color-3: #eeeeee;
+$neutral-white-color: #ffffff;
+$neutral-black-color: #000000;
+
+//background-colors
+.bg-none{
+    background: none;
+}
+
+.primary-bg {
+  background-color: $primary-color !important;
+  border: $primary-color !important;
+}
+
+.gold-bg {
+  background-color: $secondary-color !important;
+  border: $secondary-color !important;
+}
+
+.neutral-gray-color-3-bg {
+  background-color: $neutral-gray-color-3 !important;
+  border: $neutral-gray-color-3 !important;
+}
+
+.blurry-bg {
+  background-color: rgba($color: $neutral-white-color, $alpha: 0.7);
+}
+
+//font-colors
+.font-white {
+  color: $neutral-white-color !important;
+}
+
+.font-aquila-color-3 {
+  color: $aquila-color-3 !important;
+}
+
+.font-neutral-gray-color-2 {
+  color: $neutral-gray-color-2 !important;
+}
+
+//border
+.bottom-border-1-primary{
+  border-bottom: 1px solid $primary-color;
+}
+

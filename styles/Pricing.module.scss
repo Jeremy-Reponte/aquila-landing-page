@@ -1,0 +1,15 @@
+@use "mixins";
+@use "./abstracts";
+
+.pricingSection1 {
+  background-image: url("../public/assets/aquila-bg-pricing-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 3300px;
+  .featureSection {
+    .subsBtn {
+      width: 160px;
+    }
+  }
+}
