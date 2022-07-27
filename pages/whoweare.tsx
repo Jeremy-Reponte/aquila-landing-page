@@ -1,7 +1,16 @@
 import type { NextPage } from 'next'
 import styles from '../styles/WhoWeAre.module.scss';
 import { Typography, Row, Col, Button, Card, Space, Form, Input } from 'antd';
+import Image from 'next/image';
 import React from 'react';
+import banner3 from '../public/assets/img-banner-3.png';
+import banner4 from '../public/assets/img-banner-4.png';
+import partner1 from '../public/assets/partners/Coca-Cola-Logo-1.png';
+import partner2 from '../public/assets/partners/st-1.png';
+import partner3 from '../public/assets/partners/nike-1.png';
+import partner4 from '../public/assets/partners/med-express-1.png';
+import partner5 from '../public/assets/partners/ddh-1.png';
+
 
 const { Title, Paragraph } = Typography;
 
@@ -16,7 +25,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col className="gutter-row self-center" span={8}>
                                     <Title className='font-white'>Helping People is in our Genes</Title>
                                     <Paragraph className='font-white'>
-                                        In Aquila, we always ensure our clients' needs is at the top of our priority.
+                                        In Aquila, we always ensure our clients&quote; needs is at the top of our priority.
                                         Making sure everything is for their benefit.
                                     </Paragraph>
                                     <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -26,7 +35,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col span={16}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <img width={800} src='../assets/img-banner-3.png' alt="img-banner" />
+                                            <Image width={800} height={600} src={banner3} alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>
@@ -37,7 +46,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col span={16}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <img width={576} src='../assets/img-banner-4.png' alt="img-banner" />
+                                            <Image width={576} src={banner4} alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>
@@ -47,7 +56,7 @@ const WhoWeAre: NextPage = () => {
                                         We aim to strengthen and improve our way of living by focusing our efforts to help patients
                                         and medical professionals work efficiently and effectively through cutting-edge medical
                                         technologies. As a Philippine based software company, we want to pave the way in developing
-                                        medical systems that would be used worldwide. It is in our genes to help and always put our clients'
+                                        medical systems that would be used worldwide. It is in our genes to help and always put our clients&quote;
                                         best interests above our own.
                                     </Paragraph>
                                     <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -109,35 +118,35 @@ const WhoWeAre: NextPage = () => {
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <img  src='../assets/partners/Coca-Cola-Logo-1.png' />
+                                                    <Image width={300} src={partner1} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <img  src='../assets/partners/st-1.png' />
+                                                    <Image width={300} src={partner2} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <img  src='../assets/partners/nike-1.png' />
+                                                    <Image width={250} src={partner3} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <img  src='../assets/partners/med-express-1.png' />
+                                                    <Image width={250} src={partner4} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col offset={6} span={12} className='gutter-row self-center'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <img  src='../assets/partners/ddh-1.png' />
+                                                    <Image width={300} src={partner5} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>

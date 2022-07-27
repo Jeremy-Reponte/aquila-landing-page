@@ -1,7 +1,12 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.scss';
 import { Typography, Row, Col, Button, Card, Space, Form, Input } from 'antd';
+import Image from 'next/image';
 import React from 'react';
+import banner1 from '../public/assets/img-banner-1.png';
+import banner2 from '../public/assets/img-banner-2.png';
+import product1 from '../public/assets/product-1.png';
+import product2 from '../public/assets/product-2.png';
 
 const { Title, Paragraph } = Typography;
 
@@ -14,9 +19,9 @@ const Home: NextPage = () => {
             <Col className="gutter-row self-center" span={10}>
               <Title className='font-white'>We make easier solutions for YOU</Title>
               <Paragraph className='font-white'>
-                We make tools that solve our clients' needs and concerns,
+                We make tools that solve our clients&quot; needs and concerns,
                 such as monitoring, analyzing, and interpreting data. We see to it
-                that our clients' interests are prioritized and that the best service
+                that our clients&quot; interests are prioritized and that the best service
                 is present in every interaction.
               </Paragraph>
               <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -26,7 +31,7 @@ const Home: NextPage = () => {
             <Col span={14}>
               <div className="grid justify-items-stretch">
                 <div className="justify-self-center">
-                  <img width={600} src='../assets/img-banner-1.png' alt="img-banner" />
+                  <Image width={763} height={650} src={banner1} alt="img-banner" />
                 </div>
               </div>
             </Col>
@@ -40,7 +45,7 @@ const Home: NextPage = () => {
                   <Title className='font-aquila-color-3'>Why Us?</Title>
                   <Paragraph className='font-neutral-gray-color-2'>
                     We are a team of experts. We use our combined skills and experience to create
-                    extremely reliable software tailored to your special business' needs.
+                    extremely reliable software tailored to your special business&quot; needs.
                   </Paragraph>
                   <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
                     Get a Quote
@@ -49,7 +54,7 @@ const Home: NextPage = () => {
                 <Col span={24} className='mt-16'>
                   <div className="grid justify-items-stretch">
                     <div className="justify-self-center">
-                      <img width={350} src='../assets/img-banner-2.png' alt="img-banner" />
+                      <Image width={350} height={480} src={banner2} alt="img-banner" />
                     </div>
                   </div>
                 </Col>
@@ -65,7 +70,7 @@ const Home: NextPage = () => {
             <Col span={12} className='gutter-row'>
               <Row>
                 <Col span={24}>
-                  <Space size={30} className='p-10 flex' direction="vertical">
+                  <Space size={30} className='pl-10 py-10 flex' direction="vertical">
                     <Card className='border-radius-50 drop-shadow-xl neutral-gray-color-3-bg' size='small'>
                       <Title level={4} className='font-aquila-color-3'>Stable</Title>
                       <Paragraph className='font-neutral-gray-color-2'>
@@ -86,7 +91,7 @@ const Home: NextPage = () => {
                     </Card>
                   </Space>
                 </Col>
-                <Col span={24} className='p-10'>
+                <Col span={24} className='pl-10 py-10'>
                   <Card className='border-radius-50 drop-shadow-2xl blurry-bg' size='small'>
                     <Title className='text-center font-aquila-color-3'>Subscribe to our NEWSLETTER</Title>
                     <Form
@@ -135,7 +140,7 @@ const Home: NextPage = () => {
             <Col span={12}>
               <div className="grid justify-items-stretch">
                 <div className="justify-self-center">
-                  <img width={400} src='../assets/product-1.png' alt="img-banner" />
+                  <Image width={400} height={310} src={product1} alt="img-banner" />
                 </div>
               </div>
             </Col>
@@ -161,7 +166,7 @@ const Home: NextPage = () => {
             <Col span={12}>
               <div className="grid justify-items-stretch">
                 <div className="justify-self-center">
-                  <img width={400} src='../assets/product-2.png' alt="img-banner" />
+                  <Image width={400} height={310} src={product2} alt="img-banner" />
                 </div>
               </div>
             </Col>
