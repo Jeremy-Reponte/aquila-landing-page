@@ -4,6 +4,7 @@ import { BackTop, Col, Layout, Row } from 'antd';
 import MainNavigation from './navigations/MainNavigation';
 import styles from '../styles/MainLayout.module.scss';
 import GlobalFooter from './GlobalFooter';
+import logo from '../public/assets/aquila-logo.png';
 
 const { Header, Content, Footer } = Layout;
 
@@ -20,7 +21,7 @@ const MainLayout = ({ children }: Props) => {
                     <div className='container col-12'>
                         <Row className='div-content-vertical-align px-36 pt-20'>
                             <Col span={24}>
-                                <Image className="logo" src='../assets/aquila-logo.png' alt="img-banner" />
+                                <Image width={230} className="logo" src={logo} alt="img-banner" />
                                 <div className={styles.mainNavigation}>
                                     <MainNavigation />
                                 </div>

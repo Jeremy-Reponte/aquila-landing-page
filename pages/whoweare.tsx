@@ -3,6 +3,14 @@ import styles from '../styles/WhoWeAre.module.scss';
 import { Typography, Row, Col, Button, Card, Space, Form, Input } from 'antd';
 import Image from 'next/image';
 import React from 'react';
+import banner3 from '../public/assets/img-banner-3.png';
+import banner4 from '../public/assets/img-banner-4.png';
+import partner1 from '../public/assets/partners/Coca-Cola-Logo-1.png';
+import partner2 from '../public/assets/partners/st-1.png';
+import partner3 from '../public/assets/partners/nike-1.png';
+import partner4 from '../public/assets/partners/med-express-1.png';
+import partner5 from '../public/assets/partners/ddh-1.png';
+
 
 const { Title, Paragraph } = Typography;
 
@@ -27,7 +35,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col span={16}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <Image width={800} src='../assets/img-banner-3.png' alt="img-banner" />
+                                            <Image width={800} height={600} src={banner3} alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>
@@ -38,7 +46,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col span={16}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <Image width={576} src='../assets/img-banner-4.png' alt="img-banner" />
+                                            <Image width={576} src={banner4} alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>
@@ -110,35 +118,35 @@ const WhoWeAre: NextPage = () => {
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image src='../assets/partners/Coca-Cola-Logo-1.png' alt="img-banner" />
+                                                    <Image width={300} src={partner1} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image src='../assets/partners/st-1.png' alt="img-banner" />
+                                                    <Image width={300} src={partner2} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image src='../assets/partners/nike-1.png' alt="img-banner" />
+                                                    <Image width={250} src={partner3} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image src='../assets/partners/med-express-1.png' alt="img-banner" />
+                                                    <Image width={250} src={partner4} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col offset={6} span={12} className='gutter-row self-center'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image src='../assets/partners/ddh-1.png' alt="img-banner" />
+                                                    <Image width={300} src={partner5} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>

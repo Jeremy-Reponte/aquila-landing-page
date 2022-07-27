@@ -4,6 +4,7 @@ import { Typography, Row, Col, Button, Card, Space } from 'antd';
 import Image from 'next/image';
 import { CheckOutlined } from '@ant-design/icons';
 import styles from '../styles/Pricing.module.scss';
+import banner5 from '../public/assets/img-banner-5.png';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -28,7 +29,7 @@ const Pricing: NextPage = () => {
                                 <Col span={14}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <Image width={700} src='../assets/img-banner-5.png' alt="img-banner" />
+                                            <Image width={700} height={590} src={banner5} alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>
