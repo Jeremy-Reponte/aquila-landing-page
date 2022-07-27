@@ -1,6 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Typography, Row, Col, Button, Card, Space } from 'antd';
+import Image from 'next/image';
 import { CheckOutlined } from '@ant-design/icons';
 import styles from '../styles/Pricing.module.scss';
 
@@ -15,7 +16,7 @@ const Pricing: NextPage = () => {
                         <Col span={24} className='mb-72'>
                             <Row>
                                 <Col className="gutter-row self-center" span={10}>
-                                    <Title className='font-white'>Think About the Value You're Getting</Title>
+                                    <Title className='font-white'>Think About the Value You&quote;re Getting</Title>
                                     <Paragraph className='font-white'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eu, et pellentesque quis bibendum cum.
                                         Vulputate tempor, elit odio fermentum sit suspendisse purus, platea mauris.
@@ -27,7 +28,7 @@ const Pricing: NextPage = () => {
                                 <Col span={14}>
                                     <div className="grid justify-items-stretch">
                                         <div className="justify-self-center">
-                                            <img width={700} src='../assets/img-banner-5.png' alt="img-banner" />
+                                            <Image width={700} src='../assets/img-banner-5.png' alt="img-banner" />
                                         </div>
                                     </div>
                                 </Col>

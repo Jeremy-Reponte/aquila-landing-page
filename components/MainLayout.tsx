@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import { BackTop, Col, Layout, Row } from 'antd';
 import MainNavigation from './navigations/MainNavigation';
 import styles from '../styles/MainLayout.module.scss';
@@ -19,7 +20,7 @@ const MainLayout = ({ children }: Props) => {
                     <div className='container col-12'>
                         <Row className='div-content-vertical-align px-36 pt-20'>
                             <Col span={24}>
-                                <img className="logo" src='../assets/aquila-logo.png' />
+                                <Image className="logo" src='../assets/aquila-logo.png' alt="img-banner" />
                                 <div className={styles.mainNavigation}>
                                     <MainNavigation />
                                 </div>
