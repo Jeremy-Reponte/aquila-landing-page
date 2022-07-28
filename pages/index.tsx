@@ -19,9 +19,9 @@ const Home: NextPage = () => {
             <Col className="gutter-row self-center" span={10}>
               <Title className='font-white'>We make easier solutions for YOU</Title>
               <Paragraph className='font-white'>
-                We make tools that solve our clients&quot; needs and concerns,
+                We make tools that solve our clients&rsquo; needs and concerns,
                 such as monitoring, analyzing, and interpreting data. We see to it
-                that our clients&quot; interests are prioritized and that the best service
+                that our clients&rsquo; interests are prioritized and that the best service
                 is present in every interaction.
               </Paragraph>
               <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                   <Title className='font-aquila-color-3'>Why Us?</Title>
                   <Paragraph className='font-neutral-gray-color-2'>
                     We are a team of experts. We use our combined skills and experience to create
-                    extremely reliable software tailored to your special business&quot; needs.
+                    extremely reliable software tailored to your special business&rsquo; needs.
                   </Paragraph>
                   <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
                     Get a Quote

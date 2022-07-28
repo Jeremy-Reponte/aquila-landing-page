@@ -5,11 +5,11 @@ import Image from 'next/image';
 import React from 'react';
 import banner3 from '../public/assets/img-banner-3.png';
 import banner4 from '../public/assets/img-banner-4.png';
-import partner1 from '../public/assets/partners/Coca-Cola-Logo-1.png';
-import partner2 from '../public/assets/partners/st-1.png';
-import partner3 from '../public/assets/partners/nike-1.png';
-import partner4 from '../public/assets/partners/med-express-1.png';
-import partner5 from '../public/assets/partners/ddh-1.png';
+import partner1 from '../public/assets/partners/shock-logo.png';
+import partner2 from '../public/assets/partners/ideas-logo.png';
+import partner3 from '../public/assets/partners/ivf-logo.png';
+import partner4 from '../public/assets/partners/bizhub-logo.png';
+import partner5 from '../public/assets/partners/ecomed-logo.png';
 
 
 const { Title, Paragraph } = Typography;
@@ -25,7 +25,7 @@ const WhoWeAre: NextPage = () => {
                                 <Col className="gutter-row self-center" span={8}>
                                     <Title className='font-white'>Helping People is in our Genes</Title>
                                     <Paragraph className='font-white'>
-                                        In Aquila, we always ensure our clients&quote; needs is at the top of our priority.
+                                        In Aquila, we always ensure our clients&rsquo; needs is at the top of our priority.
                                         Making sure everything is for their benefit.
                                     </Paragraph>
                                     <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -56,7 +56,7 @@ const WhoWeAre: NextPage = () => {
                                         We aim to strengthen and improve our way of living by focusing our efforts to help patients
                                         and medical professionals work efficiently and effectively through cutting-edge medical
                                         technologies. As a Philippine based software company, we want to pave the way in developing
-                                        medical systems that would be used worldwide. It is in our genes to help and always put our clients&quote;
+                                        medical systems that would be used worldwide. It is in our genes to help and always put our clients&rsquo;
                                         best interests above our own.
                                     </Paragraph>
                                     <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
@@ -74,8 +74,8 @@ const WhoWeAre: NextPage = () => {
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
                                                     <Card className={styles.coreValuesCircleDiv + ' drop-shadow-xl primary-bg'} size='small'>
-                                                        <Title level={4} className='font-white'>Integrity Above All</Title>
-                                                        <Paragraph className='font-white'>
+                                                        <Title level={4} className='font-white text-center mt-3'>Integrity Above All</Title>
+                                                        <Paragraph className='font-white text-center'>
                                                             Having strong moral principles is in our core character.
                                                         </Paragraph>
                                                     </Card>
@@ -86,8 +86,8 @@ const WhoWeAre: NextPage = () => {
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
                                                     <Card className={styles.coreValuesCircleDiv + ' drop-shadow-xl primary-bg'} size='small'>
-                                                        <Title level={4} className='font-white'>Service Over Business</Title>
-                                                        <Paragraph className='font-white'>
+                                                        <Title level={4} className='font-white text-center mt-3'>Service Over Business</Title>
+                                                        <Paragraph className='font-white text-center'>
                                                             We prioritize service and focus our efforts in improving it.
                                                         </Paragraph>
                                                     </Card>
@@ -98,8 +98,8 @@ const WhoWeAre: NextPage = () => {
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
                                                     <Card className={styles.coreValuesCircleDiv + ' drop-shadow-xl primary-bg'} size='small'>
-                                                        <Title level={4} className='font-white'>Quality is Priority</Title>
-                                                        <Paragraph className='font-white'>
+                                                        <Title level={4} className='font-white text-center mt-3'>Quality is Priority</Title>
+                                                        <Paragraph className='font-white text-center'>
                                                             Building quality softwares and tools is our number one goal.
                                                         </Paragraph>
                                                     </Card>
@@ -112,41 +112,41 @@ const WhoWeAre: NextPage = () => {
                         </Col>
                         <Col span={24} className='gutter-row mt-56'>
                             <Title className='text-center font-aquila-color-3 pb-16'>Our Partners</Title>
-                            <Row className='mt-20'>
+                            <Row className='mt-40'>
                                 <Col offset={8} span={16}>
                                     <Row>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image width={300} src={partner1} alt="img-banner" />
+                                                    <Image width={1208} height={300} src={partner1} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
                                         <Col span={12} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image width={300} src={partner2} alt="img-banner" />
+                                                    <Image width={160} height={130} src={partner2} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col span={12} className='gutter-row self-center mb-6'>
+                                        <Col span={8} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image width={250} src={partner3} alt="img-banner" />
+                                                    <Image width={150} height={150} src={partner3} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col span={12} className='gutter-row self-center mb-6'>
+                                        <Col span={8} className='gutter-row self-center mb-6'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image width={250} src={partner4} alt="img-banner" />
+                                                    <Image width={150} height={150} src={partner4} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col offset={6} span={12} className='gutter-row self-center'>
+                                        <Col span={8} className='gutter-row self-center'>
                                             <div className="grid justify-items-stretch">
                                                 <div className="justify-self-center">
-                                                    <Image width={300} src={partner5} alt="img-banner" />
+                                                    <Image width={578} src={partner5} alt="img-banner" />
                                                 </div>
                                             </div>
                                         </Col>

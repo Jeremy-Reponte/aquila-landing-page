@@ -17,7 +17,7 @@ const Pricing: NextPage = () => {
                         <Col span={24} className='mb-72'>
                             <Row>
                                 <Col className="gutter-row self-center" span={10}>
-                                    <Title className='font-white'>Think About the Value You&quote;re Getting</Title>
+                                    <Title className='font-white'>Think About the Value You&rsquo;re Getting</Title>
                                     <Paragraph className='font-white'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eu, et pellentesque quis bibendum cum.
                                         Vulputate tempor, elit odio fermentum sit suspendisse purus, platea mauris.
