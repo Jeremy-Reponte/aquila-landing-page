@@ -19,8 +19,8 @@ const Pricing: NextPage = () => {
                                 <Col className="gutter-row self-center" span={10}>
                                     <Title className='font-white'>Think About the Value You&rsquo;re Getting</Title>
                                     <Paragraph className='font-white'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eu, et pellentesque quis bibendum cum.
-                                        Vulputate tempor, elit odio fermentum sit suspendisse purus, platea mauris.
+                                        We are proud to say that the value you get from our product is way greater than the price.
+                                        In fact, we are one of the most affordable software in the market.
                                     </Paragraph>
                                     <Button className='gold-bg mt-2 drop-shadow-lg' type="primary" shape="round" size={'large'}>
                                         Call Us Now
@@ -40,8 +40,8 @@ const Pricing: NextPage = () => {
                                 <Col offset={3} span={18} className="mt-18">
                                     <Title className='font-aquila-color-3 w-3/4'>Aquila Clinic System(ACS) Product Pricing</Title>
                                     <Paragraph className='font-neutral-gray-color-2'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus malesuada pretium quam orci
-                                        aliquet morbi ultrices tellus nunc. Nunc massa nunc gravida fusce lectus massa habitant vel vel.
+                                        We made sure that our product value is always greater than our product price. Feel free to shoot us a
+                                        message here for more inquiries.
                                     </Paragraph>
                                 </Col>
                                 <Col offset={3} span={18} className="mt-20">
@@ -223,11 +223,11 @@ const Pricing: NextPage = () => {
                                             <Card className='drop-shadow-2xl blurry-bg p-3'>
                                                 <div className="grid justify-items-stretch">
                                                     <div className="justify-self-center">
-                                                        <Space direction='vertical' className='text-center' size={50}>
+                                                        <Space direction='vertical' className='text-center' size={42}>
                                                             <Text className='font-aquila-color-3 text-xl font-bold'>Mobile Apps</Text>
                                                             <Text className='font-neutral-gray-color-2'>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                                Massa urna magna sagittis ultrices euismod est.
+                                                                Aquila develops mobile apps tailored on our client&rsquo;s needs. We also build apps to
+                                                                integrate with our suite of products.
                                                             </Text>
                                                             <Button
                                                                 block
@@ -246,11 +246,34 @@ const Pricing: NextPage = () => {
                                             <Card className='drop-shadow-2xl blurry-bg p-3'>
                                                 <div className="grid justify-items-stretch">
                                                     <div className="justify-self-center">
-                                                        <Space direction='vertical' className='text-center' size={50}>
+                                                        <Space direction='vertical' className='text-center' size={30}>
                                                             <Text className='font-aquila-color-3 text-xl font-bold'>Web Applications</Text>
                                                             <Text className='font-neutral-gray-color-2'>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                                Massa urna magna sagittis ultrices euismod est.
+                                                                We build custom web applications based on our client&rsquo;s needs and business. We make sure that we
+                                                                maximize our tools to cater our clients.
+                                                            </Text>
+                                                            <Button
+                                                                block
+                                                                type="primary"
+                                                                className='gold-bg rounded-full drop-shadow-lg'
+                                                                size={'large'}
+                                                            >
+                                                                Get a Quote
+                                                            </Button>
+                                                        </Space>
+                                                    </div>
+                                                </div>
+                                            </Card>
+                                        </Col>
+                                        <Col span={12} className="p-3">
+                                            <Card className='drop-shadow-2xl blurry-bg p-3'>
+                                                <div className="grid justify-items-stretch">
+                                                    <div className="justify-self-center">
+                                                        <Space direction='vertical' className='text-center' size={42}>
+                                                            <Text className='font-aquila-color-3 text-xl font-bold'>Data Analysis</Text>
+                                                            <Text className='font-neutral-gray-color-2'>
+                                                                We help businesses analyze their business&rsquo; tech needs and requirements and make sure to provide
+                                                                them with the right solutions.
                                                             </Text>
                                                             <Button
                                                                 block
@@ -270,33 +293,9 @@ const Pricing: NextPage = () => {
                                                 <div className="grid justify-items-stretch">
                                                     <div className="justify-self-center">
                                                         <Space direction='vertical' className='text-center' size={50}>
-                                                            <Text className='font-aquila-color-3 text-xl font-bold'>Data Analysis</Text>
-                                                            <Text className='font-neutral-gray-color-2'>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                                Massa urna magna sagittis ultrices euismod est.
-                                                            </Text>
-                                                            <Button
-                                                                block
-                                                                type="primary"
-                                                                className='gold-bg rounded-full drop-shadow-lg'
-                                                                size={'large'}
-                                                            >
-                                                                Get a Quote
-                                                            </Button>
-                                                        </Space>
-                                                    </div>
-                                                </div>
-                                            </Card>
-                                        </Col>
-                                        <Col span={12} className="p-3">
-                                            <Card className='drop-shadow-2xl blurry-bg p-3'>
-                                                <div className="grid justify-items-stretch">
-                                                    <div className="justify-self-center">
-                                                        <Space direction='vertical' className='text-center' size={36}>
                                                             <Text className='font-aquila-color-3 text-xl font-bold'>Dev Operations & Automation</Text>
                                                             <Text className='font-neutral-gray-color-2'>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                                Massa urna magna sagittis ultrices euismod est.
+                                                                Aquila softwares provides automation systems tailored to your business process.
                                                             </Text>
                                                             <Button
                                                                 block
@@ -316,9 +315,8 @@ const Pricing: NextPage = () => {
                                 <Col span={10} className="p-3 pl-10">
                                     <Title className='font-aquila-color-3'>Custom Applications</Title>
                                     <Paragraph className='font-neutral-gray-color-2'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus malesuada pretium quam
-                                        orci aliquet morbi ultrices tellus nunc. Nunc massa nunc gravida fusce lectus massa
-                                        habitant vel vel.
+                                        Aquila Softwares, not only develop our own products but we also cater specific tech solutions 
+                                        for different businesses and clients. From hospitals, manufacturing, distribution, and many more.
                                     </Paragraph>
                                 </Col>
                             </Row>

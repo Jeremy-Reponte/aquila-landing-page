@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss';
 import { Typography, Row, Col, Button, Card, Space, Form, Input } from 'antd';
 import Image from 'next/image';
 import React from 'react';
-import banner1 from '../public/assets/img-banner-1.png';
+import banner1 from '../public/assets/img-banner-6.png';
 import banner2 from '../public/assets/img-banner-2.png';
 import product1 from '../public/assets/product-1.png';
 import product2 from '../public/assets/product-2.png';
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             <Col span={14}>
               <div className="grid justify-items-stretch">
                 <div className="justify-self-center">
-                  <Image width={763} height={650} src={banner1} alt="img-banner" />
+                  <Image width={863} height={650} src={banner1} alt="img-banner" />
                 </div>
               </div>
             </Col>
